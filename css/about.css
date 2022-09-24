@@ -1,0 +1,12 @@
+/* Francisco Bilbao */
+/* Santiago de Nicolás */
+
+main {
+  grid-column: 1/13;
+}
+
+.content_wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
