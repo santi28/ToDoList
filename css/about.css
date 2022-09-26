@@ -6,7 +6,33 @@ main {
 }
 
 .content_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
   width: 100%;
   max-width: 800px;
   margin: auto;
+}
+
+.content_wrapper div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px
+}
+
+.content_wrapper div img {
+  width: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+div.content {
+  flex-direction: column;
+  gap: 5px !important;
+}
+
+img.profile {
+  width: 180px !important;
 }
