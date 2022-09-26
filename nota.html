@@ -1,0 +1,87 @@
+<!-- Francisco Bilbao -->
+<!-- Santiago de Nicolas -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/nota.css">
+
+	<!-- Etiquetas Meta -->
+	<meta name="description" content="ToDoList es una página que te permitira generar tus propias notas e ir guardandolas en distintas colecciónes que tambien puedes crear">
+
+	<title>TODO LIST</title>
+</head>
+
+<body>
+	<!-- Encabezado, aca reside el menu principal y el formulario para generar una nueva nota -->
+	<header>
+		<div class="header_content">
+			<h1>✅ TODO LIST</h1>
+			<nav>
+				<ul>
+          <li><a href="/about.html">Sobre Nosotros</a></li>
+          <li class="accented">
+						<a href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 20 20">
+                <path fill="currentColor" fill-rule="evenodd"
+                  d="M10 3a1 1 0 0 1 1 1v5h5a1 1 0 1 1 0 2h-5v5a1 1 0 1 1-2 0v-5H4a1 1 0 1 1 0-2h5V4a1 1 0 0 1 1-1Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Nueva nota</span>
+            </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Menu Secundario para cambiar entre las distintas listas -->
+  
+	<!-- Contenido principal de la pagina -->
+	<main>
+    <div class="content_wrapper">
+      <aside>
+        <h2>Mis Listas</h2>
+        <nav>
+          <ul>
+            <li><a href="/index.html?lista=supermercado">🛒 Supermercado</a></li>
+            <li><a href="/index.html?lista=trabajo">💼 Trabajo</a></li>
+            <li><a href="/index.html?lista=juegos">🎮 Juegos</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <article>
+          <header>
+            <h3>Nota 1</h3>
+            <div class="prioridad">
+              <div class="circulito alta"></div>
+              <span>Alta</span>
+            </div>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
+            quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
+            Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
+            obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
+          </p>
+        </a>
+      </article>
+    </div>
+	</main>
+
+	<footer>
+		<h2>© TODO (todo@argentina.com.ar) 2003</h2>
+	</footer>
+</body>
+</html>

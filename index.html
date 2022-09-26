@@ -16,11 +16,14 @@
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./css/index.css">
 
+	<!-- Etiquetas Meta -->
+	<meta name="description" content="ToDoList es una página que te permitira generar tus propias notas e ir guardandolas en distintas colecciónes que tambien puedes crear">
+
 	<title>TODO LIST</title>
 </head>
 
 <body>
-	<!-- Encabezado -->
+	<!-- Encabezado, aca reside el menu principal y el formulario para generar una nueva nota -->
 	<header>
 		<div class="header_content">
 			<h1>✅ TODO LIST</h1>
@@ -52,94 +55,123 @@
 			<button>Añadir nota</button>
 		</form>
 	</header>
-	<!-- Menu para cambiar entre las distintas listas -->
+
+	<!-- Menu Secundario para cambiar entre las distintas listas -->
 	<aside>
 		<h2>Mis Listas</h2>
 		<nav>
 			<ul>
-				<li>🛒 Supermercado</li>
-				<li>💼 Trabajo</li>
-				<li>🎮 Juegos</li>
+				<li><a href="/index.html?lista=supermercado">🛒 Supermercado</a></li>
+				<li><a href="/index.html?lista=trabajo">💼 Trabajo</a></li>
+				<li><a href="/index.html?lista=juegos">🎮 Juegos</a></li>
 			</ul>
 		</nav>
 	</aside>
+
 	<!-- Contenido principal de la pagina -->
 	<main>
 		<h2>Notas</h2>
 		<article>
-			<header>
-				<h3>Nota 1</h3>
-				<div class="prioridad">
-					<div class="circulito alta"></div>
-					<span>Alta</span>
-				</div>
-			</header>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
-				quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
-				Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
-				obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
-			</p>
+			<a href="/nota.html">
+				<header>
+					<h3>Nota 1</h3>
+					<div class="prioridad">
+						<div class="circulito alta"></div>
+						<span>Alta</span>
+					</div>
+				</header>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
+					quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
+					Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
+					obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
+				</p>
+			</a>
 		</article>
 		<article>
-			<header>
-				<h3>Nota 2</h3>
-				<div class="prioridad">
-					<div class="circulito baja"></div>
-					<span>Baja</span>
-				</div>
-			</header>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
-				quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
-				Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
-				obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
-			</p>
+			<a href="/nota.html">
+				<header>
+					<h3>Nota 2</h3>
+					<div class="prioridad">
+						<div class="circulito baja"></div>
+						<span>Baja</span>
+					</div>
+				</header>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
+					quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
+					Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
+					obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
+				</p>
+			</a>
 		</article>
 		<article>
-			<header>
-				<h3>Nota 3</h3>
-				<div class="prioridad">
-					<div class="circulito baja"></div>
-					<span>Baja</span>
-				</div>
-			</header>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
-				quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
-				Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
-				obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
-			</p>
+			<a href="/nota.html">
+				<header>
+					<h3>Nota 3</h3>
+					<div class="prioridad">
+						<div class="circulito baja"></div>
+						<span>Baja</span>
+					</div>
+				</header>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
+					quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
+					Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
+					obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
+				</p>
+			</a>
 		</article>
 		<article>
-			<header>
-				<h3>Nota 4</h3>
-				<div class="prioridad">
-					<div class="circulito media"></div>
-					<span>Media</span>
-				</div>
-			</header>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
-				quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
-				Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
-				obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
-			</p>
+			<a href="/nota.html">
+				<header>
+					<h3>Nota 4</h3>
+					<div class="prioridad">
+						<div class="circulito media"></div>
+						<span>Media</span>
+					</div>
+				</header>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
+					quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
+					Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
+					obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
+				</p>
+			</a>
 		</article>
 		<article>
-			<header>
-				<h3>Nota 5</h3>
-				<div class="prioridad">
-					<div class="circulito alta"></div>
-					<span>Alta</span>
-				</div>
-			</header>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
-				quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
-				Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
-				obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
-			</p>
+			<a href="/nota.html">
+				<header>
+					<h3>Nota 5</h3>
+					<div class="prioridad">
+						<div class="circulito alta"></div>
+						<span>Alta</span>
+					</div>
+				</header>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
+					quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
+					Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
+					obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
+				</p>
+			</a>
+		</article>
+		<article>
+			<a href="/nota.html">
+				<header>
+					<h3>Nota 6</h3>
+					<div class="prioridad">
+						<div class="circulito media"></div>
+						<span>Media</span>
+					</div>
+				</header>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam unde magnam ab corporis in cum hic
+					quidem. Nisi natus molestias magnam non temporibus explicabo sequi ratione, mollitia nihil quisquam!
+					Aliquid sed quos nam iste molestias assumenda doloremque modi ex officia ea, quod ab vero labore eum minus omnis
+					obcaecati placeat, repellat error repudiandae sunt corrupti laboriosam fugit? Distinctio, laudantium.
+				</p>
+			</a>
 		</article>
 	</main>
 
