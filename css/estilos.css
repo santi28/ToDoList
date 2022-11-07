@@ -103,6 +103,15 @@ form > select {
   border-radius: 5px;
 }
 
+form > select.categories {
+  grid-column: 1/6;
+
+  padding: 5px;
+  border: none;
+
+  border-radius: 5px;
+}
+
 form > textarea {
   grid-column: 1/6;
 
@@ -164,6 +173,11 @@ aside > nav > ul > li > a {
 }
 
 aside > nav > ul > li > a:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.active {
   background-color: #4f46e5;
   color: white;
 }
