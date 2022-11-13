@@ -5,10 +5,10 @@ const generateID = () => (Math.random() + 1).toString(36).substring(7);
 
 submitNote.addEventListener('submit', (e) => {
   const id = generateID()
-  const noteTitle = document.querySelector("#title").value
-  const notePriority = document.querySelector("#priority").value
-  const noteCategory = document.querySelector("#listas").value
-  const noteBody = document.querySelector("#body").value
+  const noteTitle = document.querySelector("#title").value.trim()
+  const notePriority = document.querySelector("#priority").value.trim()
+  const noteCategory = document.querySelector("#listas").value.trim()
+  const noteBody = document.querySelector("#body").value.trim()
 
   e.preventDefault();
   const note = { id, noteTitle, notePriority, noteCategory, noteBody }

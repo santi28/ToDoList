@@ -33,10 +33,38 @@ article {
 
 article > header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-article > header > .prioridad {
+article > header > .left_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.left_wrapper > button {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 5px;
+
+  background-color: #e5e7eb;
+  line-height: 0px;
+
+  border-radius: 15px;
+  border: none;
+
+  font-size: .9rem;
+  cursor: pointer;
+
+  height: 100%;
+}
+
+.prioridad {
   width: fit-content;
 
   display: flex;
@@ -50,20 +78,20 @@ article > header > .prioridad {
   border-radius: 15px;
 }
 
-article > header > .prioridad > .circulito {
+.prioridad > .circulito {
   width: 20px;
   height: 20px;
   border-radius: 15px;
 }
 
-article > header > .prioridad > .circulito.alta {
+.prioridad > .circulito.alta {
   background-color: #dc2626;
 }
 
-article > header > .prioridad > .circulito.media {
+.prioridad > .circulito.media {
   background-color: #fbbf24;
 }
 
-article > header > .prioridad > .circulito.baja {
+.prioridad > .circulito.baja {
   background-color: #4ade80;
 }
