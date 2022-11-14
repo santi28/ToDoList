@@ -18,6 +18,10 @@
 	<!-- Etiquetas Meta -->
 	<meta name="description" content="ToDoList es una página que te permitira generar tus propias notas e ir guardandolas en distintas colecciónes que tambien puedes crear">
 
+	<!-- Toastify - Incrusta notificaciónes de tipo toast -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
 	<title>TODO LIST</title>
 </head>
 <body>
@@ -74,9 +78,8 @@
 	<!-- Contenido principal de la pagina -->
 	<main>
 		<h2 id="notesTitle">Notas</h2>
-		<div id="notesWrapper" class="notesWrapper">
-
-		</div>
+		<div id="notesWrapperEven" class="notesWrapper"></div>
+		<div id="notesWrapperOdd" class="notesWrapper"></div>
 	</main>
 
 	<footer>

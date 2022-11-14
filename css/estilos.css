@@ -12,8 +12,8 @@
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 75px 1fr 75px;
-  min-height: 100vh;
+  grid-template-rows: min-content 1fr;
+  height: 100vh;
 
   gap: 10px;
 }
@@ -141,6 +141,10 @@ footer {
 
 /* Aside */
 aside {
+  height: fit-content;
+  position: sticky;
+  top: 10px;
+
   grid-column: 1/4;
 
   display: flex;

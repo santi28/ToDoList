@@ -22,7 +22,15 @@ submitNote.addEventListener('submit', (e) => {
     iteratedNote => iteratedNote.noteTitle === noteTitle
   )
 
-  if (isExist) return alert('LA NOTA EXISTE PEDAZO DE MOGOLICO!')
+  if (isExist) 
+    return Toastify({
+      text: "Ya existe una nota con ese nombre",
+      duration: 3000,
+      close: true,
+      gravity: 'bottom',
+      position: 'right',
+      backgroundColor: "#1c1c1c",
+    }).showToast();
 
   notes.push(note)
 
