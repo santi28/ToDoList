@@ -1,0 +1,1 @@
+// Remueve la nota y redirige a la pagina de notas

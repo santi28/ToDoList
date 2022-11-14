@@ -36,5 +36,13 @@ submitNote.addEventListener('submit', (e) => {
 
   localStorage.setItem('notes', JSON.stringify(notes))
   getNotes()
-  alert('SE CREO UNA NOTA CABEZA DE CHOTA!')
+
+  Toastify({
+    text: "Nota creada con exito",
+    duration: 3000,
+    close: true,
+    gravity: 'bottom',
+    position: 'right',
+    backgroundColor: "#1c1c1c",
+  }).showToast();
 })
