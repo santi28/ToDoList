@@ -15,11 +15,54 @@ const getNotes = () => {
   console.log(lista)
 
   if (lista) notes = notes.filter(note => note.noteCategory === lista)
-  console.log(notes.length <= 0)
 
-  if (notes.length <= 0) 
-    return notesWrapper.innerHTML = "<p class='nonotes'>No hay notas que mostrar</p>" 
-
+  if (notes.length <= 0) {
+    notes = [
+      {
+        id: 1,
+        noteTitle: "Nota de ejemplo",
+        notePriority: "alta",
+        noteCategory: "supermercado",
+        noteBody: "Esta es una nota de ejemplo, puedes borrarla o editarla a tu gusto."
+      },
+      {
+        id: 2,
+        noteTitle: "Una nota con prioridad baja",
+        notePriority: "baja",
+        noteCategory: "trabajo",
+        noteBody: "Esta es una nota de ejemplo, con prioridad baja y perteneciente a la lista de trabajo.",
+      },
+      {
+        id: 3,
+        noteTitle: "Una nota para la lista de juegos",
+        notePriority: "media",
+        noteCategory: "juegos",
+        noteBody: "Esta nota pertenece a la lista de juegos, podes borrarla o editar el cuerpo de la nota a tu gusto.",
+      },
+      {
+        id: 4,
+        noteTitle: "Otra nota de ejemplo",
+        notePriority: "alta",
+        noteCategory: "trabajo",
+        noteBody: "Esta es una nota de ejemplo, puedes borrarla o editarla a tu gusto."
+      },
+      {
+        id: 5,
+        noteTitle: "Una nota con prioridad baja en la lista de juegos",
+        notePriority: "baja",
+        noteCategory: "juegos",
+        noteBody: "Esta es una nota de ejemplo, con prioridad baja y perteneciente a la lista de juegos.",
+      },
+      {
+        id: 6,
+        noteTitle: "Una nota para la lista de supermercado",
+        notePriority: "media",
+        noteCategory: "supermercado",
+        noteBody: "Esta nota pertenece a la lista de supermercado, podes borrarla o editar el cuerpo de la nota a tu gusto.",
+      },
+    ]
+    localStorage.setItem('notes', JSON.stringify(notes))
+  }
   // Si el indice es par, se agrega a la lista de notas pares
   // Si el indice es impar, se agrega a la lista de notas impares
   notes.forEach((note, index) => {

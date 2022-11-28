@@ -7,14 +7,12 @@ main {
 .content_wrapper {
   display: flex;
   gap: 20px;
-
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
+  margin: 0 30px;
 }
 
 aside {
   width: 40%;
+  margin: 0px;
 }
 
 h2 {
@@ -94,4 +92,30 @@ article > header > .left_wrapper {
 
 .prioridad > .circulito.baja {
   background-color: #4ade80;
+}
+
+textarea {
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .content_wrapper {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  article > header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  article > header > .left_wrapper {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
